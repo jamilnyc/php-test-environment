@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  app-test:
+    container_name: interview_container
+    image: interview-test:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ..:/var/www/app-test
+    environment:
+      - PHP_IDE_CONFIG=serverName=localhost
+    working_dir: /var/www/app-test
