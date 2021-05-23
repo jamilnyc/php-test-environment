@@ -72,7 +72,7 @@ These instructions are specific to PHPStorm, but the high level concepts may app
 * Open `PHPStorm > Preferences`
 * Open `PHP > Debug`
 * Set the _Debug port_ to `9000` (set in the `Dockerfile`)
-* Enable/disable "Break at first line in PHP scripts as desired"
+* Enable/disable "Break at first line in PHP scripts" as desired
 
 #### Listen for Connections
 
@@ -81,10 +81,9 @@ These instructions are specific to PHPStorm, but the high level concepts may app
 
 ## Troubleshooting
 
-* On a Mac, if you have Screen Time limitations set, it may prevent the container from building and cause errors like the following:
+* On a Mac, if you have Screen Time limitations set, it may prevent the container from building and cause errors like the one below
+  * See [this Q&A](https://superuser.com/a/1649205/174595)
 
 ```
 File has unexpected size (137678 != 138126). Mirror sync in progress?
 ```
-
-See [this Q&A](https://superuser.com/a/1649205/174595).
